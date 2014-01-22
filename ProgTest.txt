@@ -1,0 +1,38 @@
+Fichier source : ProgTest.mcpp
+---------------------------------------------------------
+0001 main()
+     ^  ^
+     main           LEX_IDENTIFIER
+         ^
+     (              LEX_LEFT_PARENTHESIS
+          ^
+     )              LEX_RIGHT_PARENTHESIS
+---------------------------------------------------------
+0002 {
+     ^
+     {              LEX_LEFT_BRACE
+---------------------------------------------------------
+0003     int i = 2;
+         ^ ^
+     int            LEX_IDENTIFIER
+             ^
+     i              LEX_IDENTIFIER
+               ^
+     =              LEX_ASSIGNMENT  LEX_NO_OPR
+                 ^
+     2              LEX_INTEGER
+---------------------------------------------------------
+0004     cout << i;
+         ^  ^
+     cout           LEX_KEYWORD  LEX_COUT
+              ^^
+     <<             LEX_OPERATOR  LEX_COUT_OPR
+                 ^
+     i              LEX_IDENTIFIER
+                  ^
+     ;              LEX_SEMICOLON
+---------------------------------------------------------
+0005 }
+     ^
+     }              LEX_RIGHT_BRACE
+---------------------------------------------------------
