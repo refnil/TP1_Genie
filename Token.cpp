@@ -278,7 +278,7 @@ LexErrorCode_t GetToken (string Buffer, int &Index, ofstream &ListingFile, token
 			break;
 
             if(isprint(ch))
-				LexState = CHAR_FOUND2;
+				LexState = STRING_FOUND2;
 			else
 				return LEX_UNKNOWN_CHAR;
 			break;
